@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder - Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:600&display=swap">
+    <script src="https://kit.fontawesome.com/b0e93d84bc.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3 mb-5">
+
+        <div class="jumbotron">
+            <div class="text-center mb-4">
+                <img src="../images/friendfinder.png" alt="Friend Finder Logo" class="mb-2">
+                <div class="logo">friendfinder</div>
+            </div>
+            <div class="text-center">
+                <a href="/"><button class="btn btn-lg btn-custom"><i class="fas fa-home"></i> Home</button></a>
+            </div>
+
+        </div>
+
+
+
+        <form class="m-3 p-2">
+            <div class="row">
+                <div class="col d-flex justify-content-start mt-3">
+                    <h5>Your info</h5>
+                </div>
+            </div>
+            <div class="form-group mx-4">
+                <label for="name">Name</label>
+                <input type="email" class="form-control" id="name" placeholder="Yoda">
+            </div>
+            <div class="form-group mb-4 mx-4">
+                <label for="imageURL">Image URL</label>
+                <input type="url" class="form-control" id="imageURL" placeholder="http://www.facetheforce.today/yoda">
+            </div>
+
+            <div class="row">
+                <div class="col d-flex justify-content-start mt-3">
+                    <h5>Survey</h5>
+                </div>
+            </div>
+
+
+            <div class="form-group mb-4 mx-4">
+                <label for="q1">My goals in life are clear</label>
+                <select class="form-control" id="q1">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+              </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q2">If people are rude to me I just shrug it off</label>
+                <select class="form-control" id="q2">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q3">I am confident in what I do</label>
+                <select class="form-control" id="q3">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q4">I can work even when things are disorganised</label>
+                <select class="form-control" id="q4">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q5">Others often say I wear cool clothes</label>
+                <select class="form-control" id="q5">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q6">I often whine when I don't get my way</label>
+                <select class="form-control" id="q6">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q7">I often have a bad feeling about things</label>
+                <select class="form-control" id="q7">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q8">I like to do things in a civilized, relaxed manner</label>
+                <select class="form-control" id="q8">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q9">I can hold my own in a fight</label>
+                <select class="form-control" id="q9">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q10">I am impulsive and reckless</label>
+                <select class="form-control" id="q10">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q11">I highly value my friends</label>
+                <select class="form-control" id="q11">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q12">I have many close friends</label>
+                <select class="form-control" id="q12">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q13">I am good with gadgets</label>
+                <select class="form-control" id="q13">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q14">I am often there when others need me to save the day</label>
+                <select class="form-control" id="q14">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q15">I like flying</label>
+                <select class="form-control" id="q15">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q16">I spend a lot of time on my hair</label>
+                <select class="form-control" id="q16">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q17">I enjoy science fiction</label>
+                <select class="form-control" id="q17">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q18">I would choose the red pill</label>
+                <select class="form-control" id="q18">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q19">Playing a game is fun only when you win</label>
+                <select class="form-control" id="q19">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group m-4">
+                <label for="q20">When people succeed, it's because of hard work. Luck has nothing to do with success</label>
+                <select class="form-control" id="q20">
+                    <option selected>Choose...</option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">Disagree</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Agree</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col d-inline-flex justify-content-center">
+                    <div class="btn btn-custom m-3">Submit</div>
+                </div>
+            </div>
+        </form>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-column">
+                        <div><strong>Developers</strong></div>
+                        <div><a href="/api/friends">API Potential Friends</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.btn-custom {
+    color: #fff;
+    background-color: #5588c7;
+    border-color: #5588c7;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background-color: #5588c7;
+    border-color: #5588c7;
+}
+
+.btn-custom:focus,
+.btn-custom.focus {
+    box-shadow: 0 0 0 0.2rem #5588c7;
+}
+
+.btn-custom.disabled,
+.btn-custom:disabled {
+    color: #fff;
+    background-color: #5588c7;
+    border-color: #5588c7;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active,
+.btn-custom:not(:disabled):not(.disabled).active,
+.show>.btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #5588c7;
+    border-color: #5588c7;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active:focus,
+.btn-custom:not(:disabled):not(.disabled).active:focus,
+.show>.btn-custom.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #5588c7;
+}
+
+.logo {
+    font-family: 'Signika', sans-serif;
+    font-size: 33pt;
+}
