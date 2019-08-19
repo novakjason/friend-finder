@@ -8,7 +8,7 @@
     <title>Friend Finder - Survey</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:600&display=swap">
@@ -21,7 +21,7 @@
 
         <div class="jumbotron">
             <div class="text-center mb-4">
-                <img src="../images/friendfinder.png" alt="Friend Finder Logo" class="mb-2">
+                <img src="images/friendfinder.png" alt="Friend Finder Logo" class="mb-2">
                 <div class="logo">friendfinder</div>
             </div>
             <div class="text-center">
@@ -315,63 +315,7 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        $("#submit-survey").on("click", function() {
-
-            function validate() {
-                var isValid = true;
-                $(".form-control").each(function() {
-                    if ($(this).val() === "") {
-                        isValid = false;
-                    }
-                });
-                return isValid;
-            }
-
-            if (validate()) {
-
-                let userData = {
-                    name: $("#name").val(),
-                    photo: $("#imageURL").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val(),
-                        $("#q11").val(),
-                        $("#q12").val(),
-                        $("#q13").val(),
-                        $("#q14").val(),
-                        $("#q15").val(),
-                        $("#q16").val(),
-                        $("#q17").val(),
-                        $("#q18").val(),
-                        $("#q19").val(),
-                        $("#q20").val()
-                    ]
-                };
-
-                let currentURL = window.location.origin;
-
-                $.post(currentURL + "/api/friends", userData, function(data) {
-
-                    $("#matchName").text(data.name);
-                    $("#matchImage").attr("src", data.photo);
-
-                    $("#results").modal("toggle");
-                });
-            } else {
-                alert("Please fill out all fields!");
-            }
-            return false;
-        });
-    </script>
+    <script src="js/survey.js"></script>
 
 </body>
 
